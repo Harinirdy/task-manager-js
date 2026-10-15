@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Task Manager</h1>
+    <form id="taskForm">
+        <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter your task"
+        >
+        
+<select id="priorityInput">
+    <option value="low">Low Priority</option>
+    <option value="medium">Medium Priority</option>
+    <option value="high">High Priority</option>
+</select>
+
+        <input type="date" id="task-due-date">
+        <button type="submit">Add Task</button>
+    </form>
+    <div class ="stat">
+        <div class="stat-card">
+    <h3>Total Tasks</h3>
+    <p id="totalTasks">0</p>
+    </div>
+    <div class="stat-card">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+    </div>
+    <div class="stat-card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+    </div>
+ </div>
+
+   
+<h2>My Tasks</h2>
+
+<input
+    type="text"
+    id="search-task"
+    placeholder="Search tasks..."
+>
+
+<select id="filter-priority">
+    <option value="all">All Priorities</option>
+    <option value="low">Low Priority</option>
+    <option value="medium">Medium Priority</option>
+    <option value="high">High Priority</option>
+</select>
+
+<ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
